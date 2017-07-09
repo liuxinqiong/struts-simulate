@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc-config>
+  <form-beans>
+  <!-- FormBeanConfig 实体类 -->
+      <form-bean name="userBean"  class="com.framework.entity.UserEntity"/>
+  </form-beans>
+  <action-mappings>
+     <!-- ActionConfig 实体类   配置请求路径的映射 -->
+      <action  path="/log"   class="com.framework.mvc.LoginAction"  name="userBean"   param="id"/>
+      <action path="/user"    class="com.framework.mvc.UserAction"  name="userBean"/>
+  </action-mappings>
+
+</mvc-config>
